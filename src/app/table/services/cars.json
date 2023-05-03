@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "brand": "bmw",
+    "year": 2023,
+    "engine": "3.0",
+    "horsepower": 425,
+    "torque": 500
+  },
+  {
+    "id": "2",
+    "brand": "kia",
+    "year": 2008,
+    "engine": "1.4",
+    "horsepower": 110,
+    "torque": 130
+  },
+  {
+    "id": "3",
+    "brand": "mercedes",
+    "year": 2017,
+    "engine": "2.0",
+    "horsepower": 230,
+    "torque": 400
+  },
+  {
+    "id": "4",
+    "brand": "hyundai",
+    "year": 2019,
+    "engine": "1.2",
+    "horsepower": 80,
+    "torque": 100
+  },
+  {
+    "id": "5",
+    "brand": "peugeot",
+    "year": 2020,
+    "engine": "1.6",
+    "horsepower": 160,
+    "torque": 200
+  },
+  {
+    "id": "6",
+    "brand": "lambo",
+    "year": 2018,
+    "engine": "5.0",
+    "horsepower": 600,
+    "torque": 700
+  },
+  {
+    "id": "7",
+    "brand": "porsche",
+    "year": 2023,
+    "engine": "3.0",
+    "horsepower": 443,
+    "torque": 600
+  },
+  {
+    "id": "8",
+    "brand": "audi",
+    "year": 2010,
+    "engine": "4.0",
+    "horsepower": 400,
+    "torque": 500
+  },
+  {
+    "id": "9",
+    "brand": "toyota",
+    "year": 1993,
+    "engine": "3.0",
+    "horsepower": 280,
+    "torque": 300
+  },
+  {
+    "id": "10",
+    "brand": "ferrari",
+    "year": 2012,
+    "engine": "4.5",
+    "horsepower": 562,
+    "torque": 398
+  }
+]

@@ -1,0 +1,89 @@
+<div class="card-container">
+  <form nz-form [formGroup]="addForm" class="login-form">
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>
+          <input
+            type="text"
+            nz-input
+            formControlName="brand"
+            placeholder="Brand"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>
+          <input
+            type="text"
+            nz-input
+            formControlName="engine"
+            placeholder="Engine"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>
+          <input
+            type="text"
+            nz-input
+            formControlName="year"
+            placeholder="Year"
+          />
+        </nz-input-group>
+        <div *ngIf="addForm.get('year').errors?.['isYear']" class="red-text">
+          Year invalid!
+        </div>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>
+          <input
+            type="text"
+            nz-input
+            formControlName="horsepower"
+            placeholder="Horsepower"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>
+          <input
+            type="text"
+            nz-input
+            formControlName="torque"
+            placeholder="Torque"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <button
+      nz-button
+      class="login-form-button login-form-margin"
+      [nzType]="'primary'"
+      [disabled]="!addForm.valid"
+      (click)="addCar()"
+    >
+      Add
+    </button>
+    <button
+      nz-button
+      class="login-form-button login-form-margin"
+      [nzType]="'primary'"
+      (click)="goBack()"
+    >
+      Go back
+    </button>
+  </form>
+</div>

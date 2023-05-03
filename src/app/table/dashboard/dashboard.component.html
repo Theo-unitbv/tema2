@@ -1,0 +1,41 @@
+<div class="table-container">
+  <div class="table-operations">
+    <button nz-button (click)="addNewCar()" nzType="primary">
+      Add New Car
+    </button>
+    <button nz-button (click)="sortByYear()" nzType="primary">
+      Sort By Year
+    </button>
+  </div>
+
+  <nz-table #basicTable [nzData]="carList" [nzPageSize]="8">
+    <thead>
+      <tr>
+        <th nzLeft>Brand</th>
+        <th>Year</th>
+        <th>Engine</th>
+        <th>Horsepower</th>
+        <th>Torque</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <!-- ! pipe -->
+        <td nzLeft>{{ data.brand | uppercase }}</td>
+        <td>{{ data.year }}</td>
+        <td>{{ data.engine }}</td>
+        <td>{{ data.horsepower }}</td>
+        <td>{{ data.torque }}</td>
+        <td>
+          <span
+            nz-icon
+            nzType="edit"
+            nzTheme="outline"
+            (click)="editCar(data)"
+          ></span>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>
